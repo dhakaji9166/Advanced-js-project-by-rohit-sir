@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drag Drop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>Drag Drop</h1>
+    <div id="wrapper">
+        <div class="drag_drop">
+            <img src="images/cat-551554_1920.jpg" alt="" draggable="true" ondragstart="drag(event)" width="336"
+                height="120">
+            <img src="images/deer-1367217_1920.jpg" alt="" draggable="true" ondragstart="drag(event)" width="336"
+                height="120">
+            <img src="images/puppy-1207816_1920.jpg" alt="" draggable="true" ondragstart="drag(event)" width="336"
+                height="120">
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="figure">
+            <div class="box" id="box1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        </div>
+
+        <div class="figure">
+            <div class="box" id="box2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        </div>
+
+        <div class="figure">
+            <div class="box" id="box3" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        </div>
+    </div>
+
+    <script>
+        function allowDrop(ev) {
+            ev.preventDefault();
+        }
+
+        function drag(ev) {
+            ev.dataTransfer.setData("text", ev.target.src);
+        }
+ 
+        function drop(ev) {
+            ev.preventDefault();
+            var data = ev.dataTransfer.getData("text");
+            var img = document.createElement("img");
+            img.src = data;
+            img.width = 336;
+            img.height = 120;
+            ev.target.appendChild(img);
+        }
+    </script>
+</body>
+
+</html>
