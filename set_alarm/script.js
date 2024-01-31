@@ -1,5 +1,4 @@
 
-
 const btn = document.querySelector("button");
 const names = document.querySelector("#name");
 const time = document.querySelector("#time");
