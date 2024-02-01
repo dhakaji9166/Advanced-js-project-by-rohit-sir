@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Text Note</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500&family=Poppins:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="leftBox">
+      <div class="text-flex">
+        <!-- <input type="text" id="noteText" /> -->
+        <textarea id="noteText" placeholder="Write a text here"></textarea>
+
+        <input type="color" id="colorPicker" />
+      </div>
+
+      <button id="btn">Add Note</button>
+    </div>
+
+    <div id="rightBox">
+      <h1>Your Notes</h1>
+      <div id="noteDisplay"></div>
+    </div>
+
+    <script>
+      const btn = document.querySelector("#btn");
+      btn.addEventListener("click", addNote);
+
+      function addNote() {
+        const text = document.getElementById("noteText").value;
+        const color = document.getElementById("colorPicker").value;
+        const noteEle = document.createElement("div");
+        noteEle.classList.add("noteBox");
+
+        noteEle.innerHTML = text;
+        noteEle.style.backgroundColor = color;
+
+        document.getElementById("noteDisplay").appendChild(noteEle);
+
+        document.getElementById("noteText").value = "";
+      }
+    </script>
+  </body>
+</html>

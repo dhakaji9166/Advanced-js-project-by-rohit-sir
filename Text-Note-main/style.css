@@ -1,0 +1,91 @@
+* {
+    font-family: "Caveat", cursive;
+  }
+  body {
+    display: flex;
+  }
+
+  #leftBox {
+    width: 730px;
+    background-color: gray;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 3rem;
+    background-color: #ddd3ef;
+ 
+  }
+
+  #rightBox {
+    width: 800px;
+    background-color: antiquewhite;
+    height: 100vh;
+    margin: auto;
+    text-align: center;
+background-color: antiquewhite;
+  }
+
+  #noteDisplay {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .noteBox {
+    height: 170px;
+    width: 220px;
+    border-radius: 10px;
+    font-size: 25px;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.717);
+    border: none;
+  }
+
+  .noteBox {
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #ddd;
+    color: white;
+  }
+  #noteText {
+    height: 250px;
+    width: 430px;
+    box-shadow: 2px 2px 4px #ddd3ef;
+    border-radius: 10px;
+    border: none;
+    background: linear-gradient(#ff45006b, #00000073);
+    color: white;
+    font-size: 20px;
+    font-family: "Poppins", sans-serif;
+    padding: 5px 0 0 10px;
+  }
+  #colorPicker {
+    height: 50px;
+    width: 100px;
+    border: none;
+    background: linear-gradient(rgba(0, 0, 0, 0.21), rgba(0, 0, 0, 0.279));
+  }
+  .text-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  button {
+    display: inline-block;
+    height: 45px;
+    width: 120px;
+    border-radius: 20px;
+    background-color: #ec412793;
+    box-shadow: 2px 2px 4px #a1783c;
+    border: none;
+    margin-top: 1rem;
+    color: white;
+    font-size: 20px;
+    text-shadow: 2px 2px 8px #f6c18f;
+    font-family: "Poppins", sans-serif;
+  }
+  h1 {
+    color: #8a632c;
+  }
+  .placeholder {
+    color: white !important;
+    font-weight: bold !important;
+  }
