@@ -1,0 +1,59 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.img_music {
+    width: 300px;
+    height: 180px;
+    border-radius: 18px;
+    background-color: rgba(0, 255, 255, 0.281);
+
+}
+
+.img_music img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+#myaudio1 {
+    width: 300px;
+    height: 180px;
+    border-radius: 18px;
+    background-color: rgba(0, 255, 255, 0.281);
+}
+
+#myaudio1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+
+#myaudio2 {
+    width: 300px;
+    height: 180px;
+    border-radius: 18px;
+    background-color: rgba(0, 255, 255, 0.281);
+    box-shadow: 10px 8px 10px solid rgba(0, 255, 255, 0.927);
+}
+
+#myaudio2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+
+
+}
+
+.items {
+   
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: bisque;
+}

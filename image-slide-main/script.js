@@ -6,10 +6,10 @@ slides.forEach((names, index) => {
     names.style.left = `${index * 100}%`
 })
 
- const myInterval = setInterval(()=>{
+const myInterval = setInterval(() => {
     counter++
-    if(counter === slides.length){
-        counter =0;
+    if (counter === slides.length) {
+        counter = 0;
     }
     sliderImage();
 }, 2000);
@@ -24,7 +24,7 @@ const sliderImage = () => {
 
 const goNext = () => {
     counter++
-    if(counter == slides.length){
+    if (counter == slides.length) {
         counter = 0;
     }
     sliderImage();
@@ -33,8 +33,8 @@ const goNext = () => {
 
 const goPrev = () => {
     counter--
-    if(counter <0){
-        counter = slides.length-1;
+    if (counter < 0) {
+        counter = slides.length - 1;
     }
     sliderImage()
 }

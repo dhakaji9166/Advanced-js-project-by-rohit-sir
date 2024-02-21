@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#wrapper{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: blanchedalmond;
+}
+#quiz{
+    text-align: center;
+    width: 70%;
+    padding: 1rem;
+    border-radius: 2rem;
+    background-color: #fff;
+}
+
+#options{
+    display: flex;
+    flex-wrap: wrap;
+}
+#options p {
+    width: 47%;
+    margin: 5px;
+    background-color: green;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.question .photo{
+    width: 150px;
+    border: 1px solid #000;
+}
+#none
+{
+    display: block;
+}
+#quiz h1{
+    padding: 1rem;
+    font-size:62px;
+}

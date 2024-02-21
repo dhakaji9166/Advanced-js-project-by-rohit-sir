@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sound & music</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="items">
+        <div id="myaudio">
+            <div class="img_music">
+                <img src="images/crash-removebg-preview.png" alt="" onclick="playAudio()">
+            </div>
+            <audio id="audioPlayer">
+                <source src="images/crash.mp3" type="audio/mpeg">
+                <source src="images/crash.ogg" type="audio/ogg">
+
+            </audio>
+
+        </div>
+
+        <div id="myaudio1">
+            <img src="images/kick-removebg-preview.png" alt="" onclick="playAudio1()">
+            <audio id="audioPlayer1">
+                <source src="images/kick.mp3" type="audio/mpeg">
+                <source src="images/kick.ogg" type="audio/ogg">
+
+            </audio>
+
+        </div>
+
+        <div id="myaudio2">
+            <img src="images/tom-removebg-preview.png" alt="" onclick="playAudio2()">
+            <audio id="audioPlayer2">
+                <source src="images/tom.mp3" type="audio/mpeg">
+                <source src="images/tom.ogg" type="audio/ogg">
+
+            </audio>
+
+        </div>
+
+        <div id="myaudio2">
+            <img src="images/snare-removebg-preview.png" alt="" onclick="playAudio2()">
+            <audio id="audioPlayer2">
+                <source src="images/snare.mp3" type="audio/mpeg">
+                <source src="images/snare.mp3" type="audio/ogg">
+
+            </audio>
+
+        </div>
+    </div>
+
+    <script>
+        const audioPlayer = document.getElementById("audioPlayer");
+        const audioPlayer1 = document.getElementById("audioPlayer1");
+        const audioPlayer2 = document.getElementById("audioPlayer2");
+
+
+        function playAudio() {
+            audioPlayer.play();
+        }
+
+
+        function playAudio1() {
+            audioPlayer1.play();
+        }
+
+        function playAudio2() {
+            audioPlayer2.play();
+        }
+    </script>
+</body>
+
+</html>
