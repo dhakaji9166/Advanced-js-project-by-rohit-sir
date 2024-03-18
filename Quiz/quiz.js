@@ -115,34 +115,34 @@ function enableOptions() {
   });
 }
 
-// function compareUserAnswers() {
-//   let score = 0;
-//   userAnswers.forEach((userA, index) => {
-//     if (questions[randomorder[index]].hasImages === true) {
-//       if (userA !== "NA" && Number(userA) === questions[randomorder[index]].correct) {
-//         score++;
-//       } else if (Number(userA) !== "NA" && Number(userA) === questions[randomorder[index]].correct) {
-//         score++;
-//       }
-//     }
-//   })
-//   diss.style.display = "none";
-//   result.innerHTML = ("Your Score is:" + score);
-
-// }
-
 function compareUserAnswers() {
   let score = 0;
   userAnswers.forEach((userA, index) => {
-    if (questions[randomorder[index]].hasImages === false) {
-      userA = Number(userA);
-      score ++;
+    if (questions[randomorder[index]].hasImages === true) {
+      if (userA !== "NA" && (userA) === questions[randomorder[index]].correct) {
+        score++;
+      } else if (userA !== "NA" && Number(userA) === questions[randomorder[index]].correct) {
+        score++;
+      }
     }
-    if (userA === "NA" || userA === questions[randomorder[index]].correct) {
-      score++;
-    }
-  });
-
+  })
   diss.style.display = "none";
-  result.innerHTML = "Your Score is: " + score;
+  result.innerHTML = ("Your Score is:" + score);
+
 }
+
+// function compareUserAnswers() {
+//   let score = 0;
+//   userAnswers.forEach((userA, index) => {
+//     if (questions[randomorder[index]].hasImages === false) {
+//       userA = Number(userA);
+//       score ++;
+//     }
+//     if (userA === "NA" || userA === questions[randomorder[index]].correct) {
+//       score++;
+//     }
+//   });
+
+//   diss.style.display = "none";
+//   result.innerHTML = "Your Score is: " + score;
+// }
